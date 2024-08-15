@@ -10,11 +10,8 @@ function App(){
   return(
     
     <>
- <Navbar />
-
-    <Owl/>  
-
-       {/* <h4>sadiaaaaaaa</h4> */}
+      <Navbar />
+       <Owl/>  
     
     </>
     

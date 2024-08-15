@@ -25,7 +25,7 @@
 .ant-text {
   margin-top: 5px;
   text-align: center;
-  z-index: 3; /* Ensure text stays below the image */
+  z-index: 3; 
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -76,13 +76,6 @@
 .ant {
   position: relative; /* Ant is positioned relative to its container */
 }
-/* 
-
-
-.ant-image {
-  transition: opacity 0.2s; /* Smooth transition for visibility changes */
-
-
 
 .ant {
   position: relative; /* Ant is positioned relative to its container */
@@ -147,7 +140,12 @@
     
   }
 
-  
-
-  
   }
+
+  @media (max-width: 768px) {
+    .ant-in-owl-eat .ant-image,
+    .ant-in-owl-eat .ant-text {
+      display: none;
+    }
+  }
+  

@@ -9,25 +9,7 @@
      /* background-color: antiquewhite; */
    
   }
-  /* .ant4-container {
-    position: fixed;
-    top: 30%;
-    right: 24%;
-    z-index: 10;
-    background-color: transparent!important;
-    
-  } */
-
-
   
-
-  /* .top-right-ant{
-       position: absolute!important;
-       left: 0;
-       bottom: 40px;
-       background-color: transparent!important;
-       background-color: none!important;
-  } */
   
   .ant-container {
     position: relative; /* Ensure container is relative to contain absolutely positioned ants */
@@ -46,15 +28,7 @@
   background-color: transparent !important;
 }
 
-/* .next-position {
-  top: 50%;
-  left: 20%;
-} */
 
-/* .ant4-container.next-position {
-  top: 50%;
-  left: 20%;
-} */
 
 /* Navigation Buttons */
 .navigation-button {
@@ -159,8 +133,7 @@
       background-color: transparent !important;
     }
     .ant4-next-position {
-      /* position: absolute; */
-      /* Position for Ant 4 when Next button is clicked */
+     
       top: 70%!important; /* Example position change */
       left: 20%; 
     }
