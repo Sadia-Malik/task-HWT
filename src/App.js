@@ -12,9 +12,9 @@ function App(){
     <>
  <Navbar />
 
-    {/* <Owl/>  */}
+    <Owl/>  
 
-       <h4>sadiaaaaaaa</h4>
+       {/* <h4>sadiaaaaaaa</h4> */}
     
     </>
     
