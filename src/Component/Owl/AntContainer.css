@@ -95,6 +95,75 @@
 .ant4-next-position {
   /* position: absolute; */
   /* Position for Ant 4 when Next button is clicked */
-  top: 90%!important; /* Example position change */
+  top: 85%!important; /* Example position change */
   left: 30%; 
 }
+
+@media (max-width: 924px) {
+  .ant-container {
+    
+   
+     width: 60%;
+     padding-top: 40px ;
+     /* background-color: antiquewhite; */
+   
+  }
+
+  .ant4-container {
+    position: fixed;
+    top: 40%;
+    right: 16%;
+    z-index: 10;
+    background-color: transparent !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-container {
+    
+   
+     width: 75%;
+     padding-top: 40px ;
+     
+   
+  }
+
+  .ant4-container {
+    position: fixed;
+    top: 35%;
+    right: 8%;
+    z-index: 10;
+    background-color: transparent !important;
+  }
+
+  .ant4-next-position {
+    /* position: absolute; */
+    /* Position for Ant 4 when Next button is clicked */
+    top: 75%!important; /* Example position change */
+    left: 25%; 
+  }
+}
+
+@media (max-width: 520px) 
+{
+  
+    
+      .ant-container{
+      width: 90%;
+     }
+     .ant4-container {
+      position: fixed;
+      top: 32%;
+      right: 3%;
+      z-index: 10;
+      background-color: transparent !important;
+    }
+    .ant4-next-position {
+      /* position: absolute; */
+      /* Position for Ant 4 when Next button is clicked */
+      top: 70%!important; /* Example position change */
+      left: 20%; 
+    }
+  
+  }
+    

@@ -18,6 +18,7 @@
     width: 330px;
     height: 280px;
     margin-top: 3%;
+    z-index: 1;
    
 }
 /* .ool-image {
@@ -31,7 +32,7 @@
     position: relative;
   }
 
-  .position-ab-le{
+  /* .position-ab-le{
       position: absolute;
       left: 40%;
       bottom: 28%;
@@ -45,15 +46,15 @@
     bottom: 30%;
     width: 90px;
       height: 90px;
-}
-.owl-eat{
-    width: 120px;
-    height: 120px;
+} */
+/* .owl-eat{
+    width: 130px;
+    height: 130px;
     /* background-color: blue; */
-    position: absolute;
-    top: 70%;
-    animation: bounce 1s infinite;
-}
+   
+/*    
+    animation: bounce 1s infinite; 
+} */
 
 .img-w {
   transition: transform 0.2s;
@@ -95,14 +96,17 @@
 
 
 .owl-eat {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  /* background-color: #4CAF50; */
  
   position: absolute;
+
   top: 70%;
-  left: 50%; /* Center horizontally if needed */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 1; /* Ensure it's above other elements */
+  left: 51%; /* Center horizontally if needed */
+  transform: translateX(-51%); /* Center horizontally */
+/* Ensure it's above other elements */
+z-index: 3;
 }
 
 
@@ -165,24 +169,14 @@ background: #D9D9D9;
   display: block;
 }
 
-/* Owl.css */
-/* .ant4-container {
-  position: fixed;
-  top: 30%;
-  right: 24%;
-  z-index: 10;
-  background-color: transparent !important;
-} */
-
-/* .ant4-container.owl-next-position {
-  top: 50%;
-  left: 30%;
-} */
 
 .position-ab-le {
   position: absolute;
-  left: 40%;
-  bottom: 28%;
+  left: 43%;
+  bottom: 20%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
 }
 
 .position-ab-le-next {
@@ -192,8 +186,11 @@ background: #D9D9D9;
 
 .position-ab-ri {
   position: absolute;
-  left: 52%;
-  bottom: 30%;
+  left: 53%;
+  bottom: 28%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
 }
 
 .position-ab-ri-next {
@@ -201,24 +198,6 @@ background: #D9D9D9;
   bottom: 17%;
 }
 
-/* Owl.css */
-/* .bounce {
-  animation: bounce-animation 1s infinite;
-}
-
-@keyframes bounce-animation {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-} */
-
-/* Other existing styles... */
 
 
 /* Owl.css */
@@ -239,4 +218,135 @@ background: #D9D9D9;
   animation: bounce 1s ease infinite;
 }
 
+@media (max-width: 1029px) {
+  
+    
+     .position-ab-le {
+    position: absolute;
+    left: 42%;
+    bottom: 26%;
+   
+    z-index: 2;
+  }
+  .position-ab-le-next {
+    left: 40%;
+    bottom: 12%;
+  }
+}
 
+
+
+@media (max-width: 924px) {
+  
+.position-ab-le {
+  position: absolute;
+  left: 40%;
+  bottom: 24%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+.position-ab-le-next {
+  left: 38%;
+  bottom: 12%;
+}
+}
+
+
+@media (max-width: 768px) {
+  
+  .img-w{
+    width: 250px;
+    height: 200px;
+    margin-top: 6%;
+    z-index: 1;
+   
+}
+.position-ab-ri {
+  position: absolute;
+  left: 56%;
+  bottom: 30%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+.position-ab-le {
+  position: absolute;
+  left: 42%;
+  bottom: 28%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+.navigation-button {
+  position: fixed;
+  width: 100px; /* Adjust as needed */
+  height: 90px; /* Adjust as needed */
+  
+ 
+
+
+
+}
+.position-ab-ri-next {
+  left: 55%;
+  bottom: 20%;
+}
+.position-ab-le-next {
+  left: 40%;
+  bottom: 15%;
+}
+  }
+
+  @media (max-width: 520px) {
+  
+    
+     
+
+  .position-ab-le {
+    position: absolute;
+    left: 36%;
+    bottom: 28%;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+  }
+  .img-w{
+    width: 220px;
+    height: 180px;
+    margin-top: 6%;
+    z-index: 1;
+   
+}
+.navigation-button {
+  position: fixed;
+  width: 90px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  font-size: 18px;
+  font-weight: 400;
+ 
+  padding: 5px 0px!important;
+  
+  color: #000000;
+
+
+}
+
+.navigation-button img {
+  width: 60px;
+  height: 45px!important;
+  /* margin-left: 10px; */
+}
+
+.owl-eat {
+  width: 80px;
+  height: 80px;
+  
+}
+.position-ab-le-next {
+  left: 36%;
+  bottom: 15%;
+}
+    }

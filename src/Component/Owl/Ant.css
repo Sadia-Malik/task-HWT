@@ -1,55 +1,37 @@
+
 .ant-box {
-    width: 170px;
-    height: 170px;
-    
-    background: #D9D9D9;
+  width: 100px;
+  height: 100px;
+  background: #D9D9D9;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 20px;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    border-radius: 20px;
-  }
-  
-  .ant-image {
-    width: 61px;
-    height: 68px;
-    cursor: grab;
-    z-index: 1!important;
-  }
-  
-  .ant-text {
-    /* margin-top: 5px;
-    font-size: 12px;
-    color: #333;
-    font-family: Inter; */
-font-size: 24px;
-font-weight: 400;
-line-height: 1;
-text-align: left;
+/* Flex layout with proper z-index handling */
+.ant-image {
+  width: 70px;
+  height: 70px;
+  /* background-color: blue; */
+  z-index: 4;
+  position: relative; /* Important to respect z-index */
+  cursor: grab;
+}
 
-  }
-  
+.ant-text {
+  margin-top: 5px;
+  text-align: center;
+  z-index: 3; /* Ensure text stays below the image */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
 
-  .ant-box {
-    position: relative;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .ant-image {
-    width: 50px;
-    height: 50px;
-
-    z-index: 1!important;
-  }
-  
-  .ant-text {
-    margin-top: 5px;
-    text-align: center;
-  }
-  
   .eyes-container {
     position: absolute;
     top: 0;
@@ -77,16 +59,6 @@ text-align: left;
     margin-top: 30px; /* Margin for Ant 4 */
   }
   
-  .ant-image {
-    width: 100px; /* Adjust size if needed */
-    z-index: 1!important;
-  }
-  
-  .ant-text {
-    margin-top: 5px; /* Space between image and text */
-  }
-  
-
   .ant-box-red {
     background-color: none!important;
   }
@@ -99,23 +71,17 @@ text-align: left;
     background-color: lightblue;
   }
 
-/*   
-.ant-in-owl-eat {
-  position: absolute;
-  z-index: 2; 
-} */
+
 
 .ant {
   position: relative; /* Ant is positioned relative to its container */
 }
 /* 
-.ant-in-owl-eat .ant-image {
-  display: none; 
-} */
+
 
 .ant-image {
   transition: opacity 0.2s; /* Smooth transition for visibility changes */
-}
+
 
 
 .ant {
@@ -126,30 +92,7 @@ text-align: left;
   transition: opacity 0.2s; /* Smooth transition for visibility changes */
 }
 
-/* .ant-in-owl-eat .ant-image,
-.ant-in-owl-eat .ant-text
- {
-  display: none; 
-} */
 
-/* .ant-in-owl-eat {
-  position: absolute;
-  top: 30px; 
-  left: 0; 
-} */
-
-
-
-/* for text-hide */
-
-/* Existing styles... */
-
-/* .hidden {
-  display: none;
-} */
-
-
-/* Existing styles... */
 
 .hidden {
   display: none;
@@ -159,4 +102,52 @@ text-align: left;
 .ant-in-owl-eat .ant-image,
 .ant-in-owl-eat .ant-text {
   display: none;
+  z-index: 1;
 }
+
+
+@media (max-width: 768px) {
+ 
+
+  .ant-box {
+    width: 85px;
+    height: 85px;
+    background: #D9D9D9;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 20px;
+  }
+  .ant-image {
+    width: 60px;
+    height: 60px;
+   
+  }
+  .ant-text {
+    margin-top: 5px;
+    text-align: center;
+    z-index: 3; /* Ensure text stays below the image */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) 
+{
+  
+    
+  .ant-box {
+    width: 75px;
+    height: 75px;
+    
+  }
+
+  
+
+  
+  }

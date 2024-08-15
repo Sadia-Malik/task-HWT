@@ -255,7 +255,7 @@ const Ant = ({ id, image, name, onRotate, onDragEnd, onAntInOwlEatArea, isVisibl
         className={`ant-image ${isVisible && (!isInOwlEatArea || !hideInOwlEatArea || isNextClicked) ? '' : 'hidden'}`}
         drag
         dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
-        dragElastic={0.9}
+        dragElastic={1}
         onDrag={handleDrag}
         onDragEnd={onDragEnd}
         style={{ rotate: `${rotation}deg` }}

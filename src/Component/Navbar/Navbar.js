@@ -20,10 +20,10 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`navbar-menu ${menuActive ? 'active' : ''}`}>
-        <li className="navbar-item"><a href="#home">Home</a></li>
-        <li className="navbar-item"><a href="#about">About</a></li>
-        <li className="navbar-item"><a href="#services">Services</a></li>
-        <li className="navbar-item"><a href="#contact">Contact</a></li>
+        <li className="navbar-item"><a href="#Library">Library</a></li>
+        <li className="navbar-item"><a href="#Previous">Previous</a></li>
+        <li className="navbar-item"><a href="#Next">Next</a></li>
+        <li className="navbar-item"><a href="#Logout">Logout</a></li>
       </ul>
     </nav>
   );
